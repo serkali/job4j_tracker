@@ -11,13 +11,13 @@ public class Battery {
         Battery battery1 = new Battery(100);
         Battery battery2 = new Battery(0);
         System.out.println("Charge battery1:" + " " + battery1.load + " " + "Charge battery2:" + " " + battery2.load);
-        battery2.exchange(battery1);
+        battery1.exchange(battery2);
         System.out.println("Charge battery1:" + " " + battery1.load + " " + "Charge battery2:" + " " + battery2.load);
 
     }
 
     public void exchange(Battery another) {
-        this.load = this.load + another.load;
-        another.load = 0;
+      another.load = this.load + another.load;
+      this.load = 0;
     }
 }
