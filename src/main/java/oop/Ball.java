@@ -1,7 +1,7 @@
 package oop;
 
 public class Ball {
-    public void escaped(Hare hare,Wolf wolf){
+    public void escaped(Hare hare, Wolf wolf) {
 
     }
 }

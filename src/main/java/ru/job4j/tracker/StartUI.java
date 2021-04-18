@@ -9,6 +9,5 @@ public class StartUI {
         String date = item.getCreated().format(formatter);
         System.out.println(date);
 
-
     }
 }
