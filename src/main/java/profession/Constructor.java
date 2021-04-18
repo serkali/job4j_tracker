@@ -4,7 +4,9 @@ public class Constructor extends Engineer {
     private String company;
     private String objectshema;
 
-    public Constructor(String name, String surname, int age, String birthplace, String specialty, String tool, String constructionObject, String company, String objectshema) {
+    public Constructor(String name, String surname, int age,
+                       String birthplace, String specialty, String tool,
+                       String constructionObject) {
         super(name, surname, age, birthplace, specialty, tool, constructionObject);
         this.company = company;
         this.objectshema = objectshema;

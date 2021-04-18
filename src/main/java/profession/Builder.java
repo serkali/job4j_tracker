@@ -1,13 +1,15 @@
 package profession;
 
-public class Builder extends Engineer{
+public class Builder extends Engineer {
     private String buildingType;
     private int building;
 
-    public Builder(String name, String surname, int age, String birthplace, String specialty, String tool, String constructionObject, String buildingType, int building) {
+    public Builder(String name, String surname, int age, String birthplace,
+                   String specialty, String tool, String constructionObject) {
         super(name, surname, age, birthplace, specialty, tool, constructionObject);
         this.buildingType = buildingType;
         this.building = building;
+
     }
 
     public String getBuildingType() {
@@ -26,3 +28,6 @@ public class Builder extends Engineer{
         this.building = building;
     }
 }
+
+
+

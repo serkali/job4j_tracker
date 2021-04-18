@@ -1,10 +1,11 @@
 package profession;
 
-public class Pediatr extends Doctor{
+public class Pediatr extends Doctor {
     private String businesHours;
     private int numberOfChildren;
 
-    public Pediatr(String name, String surname, int age, String birthplace, String specialty, String tool, String medicalInstitution, String businesHours, int numberOfChildren) {
+    public Pediatr(String name, String surname, int age,
+                   String birthplace, String specialty, String tool, String medicalInstitution) {
         super(name, surname, age, birthplace, specialty, tool, medicalInstitution);
         this.businesHours = businesHours;
         this.numberOfChildren = numberOfChildren;
@@ -25,11 +26,12 @@ public class Pediatr extends Doctor{
     public void setBusinesHours(String businesHours) {
         this.businesHours = businesHours;
     }
-    public Pediatr diagnos(Pacient pacient){
+
+    public Pediatr diagnos(Pacient pacient) {
         return diagnos(pacient);
     }
 
-    }
+}
 
 
 
