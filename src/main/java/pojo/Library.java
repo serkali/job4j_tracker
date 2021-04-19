@@ -26,7 +26,7 @@ public class Library {
         System.out.println("Display books with the name \"Clean code\"");
         for (int i = 0; i < books.length; i++) {
             Book buka = books[i];
-            if (buka.getName().equals("Clean code")) {
+            if ("Clean code".equals(buka.getName())) {
                 System.out.println(buka.getName() + " - " + buka.getNumberOfPages());
             }
         }
